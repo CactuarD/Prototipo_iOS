@@ -15,6 +15,10 @@
 		184093431E27F61F00EAD8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184093411E27F61F00EAD8AF /* LaunchScreen.storyboard */; };
 		1840934E1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840934D1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests.swift */; };
 		184093591E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184093581E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift */; };
+		184093681E27F66000EAD8AF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184093671E27F66000EAD8AF /* MapKit.framework */; };
+		5496DD1A1C48D323DFC01E2E /* Pods_Prototipo_iOS_DesMovilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB54FE417450C22C8760A008 /* Pods_Prototipo_iOS_DesMovilUITests.framework */; };
+		5F1A1EF53B3D0B5364A16BF8 /* Pods_Prototipo_iOS_DesMovil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E91A9F9489DAA2022C33CB /* Pods_Prototipo_iOS_DesMovil.framework */; };
+		997BC13BA6506368823504CC /* Pods_Prototipo_iOS_DesMovilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F15AD8B81C53B3BDB2D4378 /* Pods_Prototipo_iOS_DesMovilTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,16 @@
 		184093541E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prototipo_iOS_DesMovilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184093581E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototipo_iOS_DesMovilUITests.swift; sourceTree = "<group>"; };
 		1840935A1E27F61F00EAD8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184093671E27F66000EAD8AF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F15AD8B81C53B3BDB2D4378 /* Pods_Prototipo_iOS_DesMovilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototipo_iOS_DesMovilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C55C325182ACE00F25FD852 /* Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilUITests/Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C8D466524AD4299D06CD3C0 /* Pods-Prototipo_iOS_DesMovil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovil/Pods-Prototipo_iOS_DesMovil.debug.xcconfig"; sourceTree = "<group>"; };
+		A1E0CFB70BF49B8D8E413CF4 /* Pods-Prototipo_iOS_DesMovilUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovilUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilUITests/Pods-Prototipo_iOS_DesMovilUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C7E91A9F9489DAA2022C33CB /* Pods_Prototipo_iOS_DesMovil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototipo_iOS_DesMovil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB02A7CF55201FCEEB000B0 /* Pods-Prototipo_iOS_DesMovil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovil.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovil/Pods-Prototipo_iOS_DesMovil.release.xcconfig"; sourceTree = "<group>"; };
+		DACB8EA658C44432F8620C9F /* Pods-Prototipo_iOS_DesMovilTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovilTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilTests/Pods-Prototipo_iOS_DesMovilTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB54FE417450C22C8760A008 /* Pods_Prototipo_iOS_DesMovilUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototipo_iOS_DesMovilUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86EF6C8348C8F11226E69F9 /* Pods-Prototipo_iOS_DesMovilTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovilTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilTests/Pods-Prototipo_iOS_DesMovilTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184093681E27F66000EAD8AF /* MapKit.framework in Frameworks */,
+				5F1A1EF53B3D0B5364A16BF8 /* Pods_Prototipo_iOS_DesMovil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997BC13BA6506368823504CC /* Pods_Prototipo_iOS_DesMovilTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5496DD1A1C48D323DFC01E2E /* Pods_Prototipo_iOS_DesMovilUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,8 @@
 				1840934C1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests */,
 				184093571E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests */,
 				184093331E27F61E00EAD8AF /* Products */,
+				184093661E27F66000EAD8AF /* Frameworks */,
+				D3043F775070E710A9E61346 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +148,30 @@
 			path = Prototipo_iOS_DesMovilUITests;
 			sourceTree = "<group>";
 		};
+		184093661E27F66000EAD8AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				184093671E27F66000EAD8AF /* MapKit.framework */,
+				C7E91A9F9489DAA2022C33CB /* Pods_Prototipo_iOS_DesMovil.framework */,
+				1F15AD8B81C53B3BDB2D4378 /* Pods_Prototipo_iOS_DesMovilTests.framework */,
+				EB54FE417450C22C8760A008 /* Pods_Prototipo_iOS_DesMovilUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3043F775070E710A9E61346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C8D466524AD4299D06CD3C0 /* Pods-Prototipo_iOS_DesMovil.debug.xcconfig */,
+				CDB02A7CF55201FCEEB000B0 /* Pods-Prototipo_iOS_DesMovil.release.xcconfig */,
+				DACB8EA658C44432F8620C9F /* Pods-Prototipo_iOS_DesMovilTests.debug.xcconfig */,
+				F86EF6C8348C8F11226E69F9 /* Pods-Prototipo_iOS_DesMovilTests.release.xcconfig */,
+				2C55C325182ACE00F25FD852 /* Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig */,
+				A1E0CFB70BF49B8D8E413CF4 /* Pods-Prototipo_iOS_DesMovilUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1840935D1E27F61F00EAD8AF /* Build configuration list for PBXNativeTarget "Prototipo_iOS_DesMovil" */;
 			buildPhases = (
+				6D6AE46031675A08800C2393 /* [CP] Check Pods Manifest.lock */,
 				1840932E1E27F61E00EAD8AF /* Sources */,
 				1840932F1E27F61E00EAD8AF /* Frameworks */,
 				184093301E27F61E00EAD8AF /* Resources */,
+				6641A696C35EB57B684343D0 /* [CP] Embed Pods Frameworks */,
+				9E69301A5D04901D40CA0034 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184093601E27F61F00EAD8AF /* Build configuration list for PBXNativeTarget "Prototipo_iOS_DesMovilTests" */;
 			buildPhases = (
+				BF5F6D9AD57C8C330593463F /* [CP] Check Pods Manifest.lock */,
 				184093451E27F61F00EAD8AF /* Sources */,
 				184093461E27F61F00EAD8AF /* Frameworks */,
 				184093471E27F61F00EAD8AF /* Resources */,
+				CD04D88792C6372ACD1D6FD3 /* [CP] Embed Pods Frameworks */,
+				7292F3088B838DC8545512D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184093631E27F61F00EAD8AF /* Build configuration list for PBXNativeTarget "Prototipo_iOS_DesMovilUITests" */;
 			buildPhases = (
+				10DD2E702709CB636231AF24 /* [CP] Check Pods Manifest.lock */,
 				184093501E27F61F00EAD8AF /* Sources */,
 				184093511E27F61F00EAD8AF /* Frameworks */,
 				184093521E27F61F00EAD8AF /* Resources */,
+				C379CBC215061A4FCCB5500F /* [CP] Embed Pods Frameworks */,
+				4509FE7CBC80F3B1A22FC4FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +251,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9VFL5M6PR9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					184093481E27F61F00EAD8AF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -259,6 +320,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10DD2E702709CB636231AF24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4509FE7CBC80F3B1A22FC4FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilUITests/Pods-Prototipo_iOS_DesMovilUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6641A696C35EB57B684343D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prototipo_iOS_DesMovil/Pods-Prototipo_iOS_DesMovil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D6AE46031675A08800C2393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7292F3088B838DC8545512D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilTests/Pods-Prototipo_iOS_DesMovilTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E69301A5D04901D40CA0034 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prototipo_iOS_DesMovil/Pods-Prototipo_iOS_DesMovil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF5F6D9AD57C8C330593463F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C379CBC215061A4FCCB5500F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilUITests/Pods-Prototipo_iOS_DesMovilUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD04D88792C6372ACD1D6FD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilTests/Pods-Prototipo_iOS_DesMovilTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1840932E1E27F61E00EAD8AF /* Sources */ = {
@@ -415,6 +614,7 @@
 		};
 		1840935E1E27F61F00EAD8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8D466524AD4299D06CD3C0 /* Pods-Prototipo_iOS_DesMovil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VFL5M6PR9;
@@ -428,6 +628,7 @@
 		};
 		1840935F1E27F61F00EAD8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB02A7CF55201FCEEB000B0 /* Pods-Prototipo_iOS_DesMovil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VFL5M6PR9;
@@ -441,6 +642,7 @@
 		};
 		184093611E27F61F00EAD8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACB8EA658C44432F8620C9F /* Pods-Prototipo_iOS_DesMovilTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +658,7 @@
 		};
 		184093621E27F61F00EAD8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86EF6C8348C8F11226E69F9 /* Pods-Prototipo_iOS_DesMovilTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +674,7 @@
 		};
 		184093641E27F61F00EAD8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C55C325182ACE00F25FD852 /* Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9VFL5M6PR9;
@@ -485,6 +689,7 @@
 		};
 		184093651E27F61F00EAD8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E0CFB70BF49B8D8E413CF4 /* Pods-Prototipo_iOS_DesMovilUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9VFL5M6PR9;

@@ -1,0 +1,6 @@
+framework module Pods_Prototipo_iOS_DesMovil {
+  umbrella header "Pods-Prototipo_iOS_DesMovil-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@ target 'Prototipo_iOS_DesMovil' do
 
   # Pods for Prototipo_iOS_DesMovil
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   target 'Prototipo_iOS_DesMovilTests' do
     inherit! :search_paths

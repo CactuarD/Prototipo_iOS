@@ -13,7 +13,7 @@
         <!--Registro-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prototipo_iOS_DesMovil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Registro_UsuariosViewController" customModule="Prototipo_iOS_DesMovil" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,65 +22,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="av6-Ps-x8y">
-                                <rect key="frame" x="16" y="145" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="av6-Ps-x8y">
+                                <rect key="frame" x="16" y="145" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dirección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-h6-UMY">
-                                <rect key="frame" x="16" y="174" width="84" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dirección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-h6-UMY">
+                                <rect key="frame" x="16" y="174" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Negocio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sVJ-vU-Wc4">
-                                <rect key="frame" x="16" y="203" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Negocio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sVJ-vU-Wc4">
+                                <rect key="frame" x="16" y="203" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefono:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-O1-jm1">
-                                <rect key="frame" x="16" y="232" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ciudad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pyt-bT-Ocy">
+                                <rect key="frame" x="16" y="261" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ciudad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pyt-bT-Ocy">
-                                <rect key="frame" x="16" y="261" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-UP-mWw">
-                                <rect key="frame" x="131" y="558" width="111" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Registrar">
-                                    <color key="titleColor" red="0.24337573205075191" green="0.47528109805658048" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos Personales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LDd-Qb-A0g">
                                 <rect key="frame" x="111" y="102" width="152" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-gV-IzM">
-                                <rect key="frame" x="0.0" y="311" width="375" height="239"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-gV-IzM">
+                                <rect key="frame" x="0.0" y="311" width="375" height="227"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Telefono:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-O1-jm1">
+                                <rect key="frame" x="16" y="232" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-UP-mWw">
+                                <rect key="frame" x="131.41000855830771" y="558" width="110.99999999999977" height="52"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleColor" red="0.24337573205075191" green="0.47528109805658048" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Pyt-bT-Ocy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0uv-UW-LFW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LDd-Qb-A0g" secondAttribute="trailing" constant="96" id="5d7-mu-iwj"/>
+                            <constraint firstItem="YJF-O1-jm1" firstAttribute="top" secondItem="sVJ-vU-Wc4" secondAttribute="bottom" constant="8" id="79a-9G-9xg"/>
+                            <constraint firstItem="Pyt-bT-Ocy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-136" id="Dz2-tI-BUP"/>
                             <constraint firstItem="LDd-Qb-A0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="EJs-v0-alk"/>
+                            <constraint firstItem="Pyt-bT-Ocy" firstAttribute="top" secondItem="YJF-O1-jm1" secondAttribute="bottom" constant="8" id="GT5-Am-xjB"/>
                             <constraint firstItem="LDd-Qb-A0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="Ggk-mh-uuv"/>
+                            <constraint firstItem="sVJ-vU-Wc4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hhy-gi-qNl"/>
+                            <constraint firstItem="dOn-h6-UMY" firstAttribute="top" secondItem="av6-Ps-x8y" secondAttribute="bottom" constant="8" id="HrC-UM-Ek8"/>
+                            <constraint firstItem="vwd-UP-mWw" firstAttribute="top" secondItem="Gqe-gV-IzM" secondAttribute="bottom" constant="20" id="JQB-hG-5FZ"/>
+                            <constraint firstItem="av6-Ps-x8y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LEA-1y-oBc"/>
+                            <constraint firstItem="dOn-h6-UMY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ngk-tZ-kHq"/>
+                            <constraint firstItem="sVJ-vU-Wc4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-136" id="O0A-Lv-95k"/>
+                            <constraint firstItem="vwd-UP-mWw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115.41" id="P9k-Q8-hte"/>
+                            <constraint firstItem="Gqe-gV-IzM" firstAttribute="top" secondItem="Pyt-bT-Ocy" secondAttribute="bottom" constant="29" id="Puo-Uj-jFZ"/>
+                            <constraint firstItem="sVJ-vU-Wc4" firstAttribute="top" secondItem="dOn-h6-UMY" secondAttribute="bottom" constant="8" id="TJX-NA-g8D"/>
+                            <constraint firstItem="dOn-h6-UMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-129.5" id="TTU-kp-P1q"/>
+                            <constraint firstAttribute="trailing" secondItem="Gqe-gV-IzM" secondAttribute="trailing" id="WNz-9z-BfI"/>
+                            <constraint firstItem="Gqe-gV-IzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eAT-Rw-fUl"/>
+                            <constraint firstItem="av6-Ps-x8y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="hYO-r8-gwx"/>
+                            <constraint firstItem="YJF-O1-jm1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-136" id="hdF-gP-z7s"/>
+                            <constraint firstItem="Gqe-gV-IzM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="91" id="jMg-52-26q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vwd-UP-mWw" secondAttribute="trailing" constant="116.59" id="oaJ-xh-4wv"/>
+                            <constraint firstItem="av6-Ps-x8y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-136" id="qsB-nr-Mbq"/>
                             <constraint firstItem="LDd-Qb-A0g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r6D-LB-yYO"/>
+                            <constraint firstItem="Gqe-gV-IzM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="roh-2K-pkH"/>
+                            <constraint firstItem="YJF-O1-jm1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wjT-DL-XSv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" prompt="Registrar nuevo usuario" id="5qd-M8-NAU">
@@ -89,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415.2" y="294.60269865067471"/>
+            <point key="canvasLocation" x="1413.5999999999999" y="292.80359820089956"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Cm-FG-ABs">

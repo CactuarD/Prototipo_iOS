@@ -16,6 +16,8 @@
 		1840934E1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840934D1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests.swift */; };
 		184093591E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184093581E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift */; };
 		184093681E27F66000EAD8AF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184093671E27F66000EAD8AF /* MapKit.framework */; };
+		18F64A6A1E2D31D700BE3EB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F64A691E2D31D700BE3EB6 /* GoogleService-Info.plist */; };
+		18F64A6C1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */; };
 		5496DD1A1C48D323DFC01E2E /* Pods_Prototipo_iOS_DesMovilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB54FE417450C22C8760A008 /* Pods_Prototipo_iOS_DesMovilUITests.framework */; };
 		5F1A1EF53B3D0B5364A16BF8 /* Pods_Prototipo_iOS_DesMovil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E91A9F9489DAA2022C33CB /* Pods_Prototipo_iOS_DesMovil.framework */; };
 		997BC13BA6506368823504CC /* Pods_Prototipo_iOS_DesMovilTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F15AD8B81C53B3BDB2D4378 /* Pods_Prototipo_iOS_DesMovilTests.framework */; };
@@ -54,6 +56,8 @@
 		184093581E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototipo_iOS_DesMovilUITests.swift; sourceTree = "<group>"; };
 		1840935A1E27F61F00EAD8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184093671E27F66000EAD8AF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18F64A691E2D31D700BE3EB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registro_UsuariosViewController.swift; sourceTree = "<group>"; };
 		1F15AD8B81C53B3BDB2D4378 /* Pods_Prototipo_iOS_DesMovilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototipo_iOS_DesMovilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C55C325182ACE00F25FD852 /* Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovilUITests/Pods-Prototipo_iOS_DesMovilUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8D466524AD4299D06CD3C0 /* Pods-Prototipo_iOS_DesMovil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prototipo_iOS_DesMovil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prototipo_iOS_DesMovil/Pods-Prototipo_iOS_DesMovil.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,12 +123,14 @@
 		184093341E27F61E00EAD8AF /* Prototipo_iOS_DesMovil */ = {
 			isa = PBXGroup;
 			children = (
-				184093351E27F61E00EAD8AF /* AppDelegate.swift */,
 				184093371E27F61E00EAD8AF /* ViewController.swift */,
+				18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */,
+				184093351E27F61E00EAD8AF /* AppDelegate.swift */,
 				184093391E27F61E00EAD8AF /* Main.storyboard */,
 				1840933F1E27F61F00EAD8AF /* Assets.xcassets */,
 				184093411E27F61F00EAD8AF /* LaunchScreen.storyboard */,
 				184093441E27F61F00EAD8AF /* Info.plist */,
+				18F64A691E2D31D700BE3EB6 /* GoogleService-Info.plist */,
 				1840933C1E27F61F00EAD8AF /* Prototipo_iOS_DesMovil.xcdatamodeld */,
 			);
 			path = Prototipo_iOS_DesMovil;
@@ -300,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184093431E27F61F00EAD8AF /* LaunchScreen.storyboard in Resources */,
+				18F64A6A1E2D31D700BE3EB6 /* GoogleService-Info.plist in Resources */,
 				184093401E27F61F00EAD8AF /* Assets.xcassets in Resources */,
 				1840933B1E27F61E00EAD8AF /* Main.storyboard in Resources */,
 			);
@@ -464,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F64A6C1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift in Sources */,
 				184093381E27F61E00EAD8AF /* ViewController.swift in Sources */,
 				1840933E1E27F61F00EAD8AF /* Prototipo_iOS_DesMovil.xcdatamodeld in Sources */,
 				184093361E27F61E00EAD8AF /* AppDelegate.swift in Sources */,
@@ -721,6 +729,7 @@
 				1840935F1E27F61F00EAD8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184093601E27F61F00EAD8AF /* Build configuration list for PBXNativeTarget "Prototipo_iOS_DesMovilTests" */ = {
 			isa = XCConfigurationList;
@@ -729,6 +738,7 @@
 				184093621E27F61F00EAD8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184093631E27F61F00EAD8AF /* Build configuration list for PBXNativeTarget "Prototipo_iOS_DesMovilUITests" */ = {
 			isa = XCConfigurationList;
@@ -737,6 +747,7 @@
 				184093651E27F61F00EAD8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

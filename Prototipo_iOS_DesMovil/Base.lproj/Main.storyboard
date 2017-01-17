@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7ng-wf-X8a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,6 +54,9 @@
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-gV-IzM">
                                 <rect key="frame" x="0.0" y="311" width="375" height="227"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="q3N-ZX-HW6"/>
+                                </connections>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Telefono:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YJF-O1-jm1">
                                 <rect key="frame" x="16" y="232" width="112" height="21"/>
@@ -63,9 +66,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-UP-mWw">
                                 <rect key="frame" x="131.41000855830771" y="558" width="110.99999999999977" height="52"/>
+                                <color key="backgroundColor" red="0.57877253160951581" green="0.83497198714543142" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Registrar">
                                     <color key="titleColor" red="0.24337573205075191" green="0.47528109805658048" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7ng-wf-X8a" kind="show" id="2cy-am-dbA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,10 +110,13 @@
                     <navigationItem key="navigationItem" title="Registro" prompt="Registrar nuevo usuario" id="5qd-M8-NAU">
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="Nh3-vu-9MU"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapRegistro" destination="Gqe-gV-IzM" id="x3U-T5-oJO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413.5999999999999" y="292.80359820089956"/>
+            <point key="canvasLocation" x="-1465" y="651"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Cm-FG-ABs">
@@ -155,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JCa-Zb-UWc"/>
+                        <segue destination="qV6-hh-PQF" kind="relationship" relationship="rootViewController" id="lP7-NY-l5o"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45G-eG-tF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,6 +192,111 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWf-HD-nqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-593" y="651"/>
+        </scene>
+        <!--Registro-->
+        <scene sceneID="N5m-vA-Wzt">
+            <objects>
+                <viewController id="qV6-hh-PQF" customClass="ViewController" customModule="Prototipo_iOS_DesMovil" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kMe-Tr-my5"/>
+                        <viewControllerLayoutGuide type="bottom" id="CTz-ny-rs7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pFO-ss-oZf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="r5Q-gy-ROg">
+                                <rect key="frame" x="16" y="145" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dirección:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QU9-St-U20">
+                                <rect key="frame" x="16" y="174" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Negocio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-NK-uxs">
+                                <rect key="frame" x="16" y="203" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ciudad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4xr-lD-PxT">
+                                <rect key="frame" x="16" y="261" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos Personales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ddS-ZT-qhr">
+                                <rect key="frame" x="111" y="102" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXp-YF-bRX">
+                                <rect key="frame" x="0.0" y="311" width="375" height="227"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qV6-hh-PQF" id="rRw-lL-2mJ"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Telefono:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UX2-yO-vZF">
+                                <rect key="frame" x="16" y="232" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZa-RX-Yav">
+                                <rect key="frame" x="131.41000855830771" y="558" width="110.99999999999977" height="52"/>
+                                <color key="backgroundColor" red="0.57877253159999997" green="0.83497198709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleColor" red="0.24337573209999999" green="0.47528109810000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rXp-YF-bRX" firstAttribute="centerY" secondItem="pFO-ss-oZf" secondAttribute="centerY" constant="91" id="05Q-Sx-Nmd"/>
+                            <constraint firstItem="QU9-St-U20" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" constant="-129.5" id="21V-JS-77O"/>
+                            <constraint firstAttribute="trailing" secondItem="rXp-YF-bRX" secondAttribute="trailing" id="3lC-j2-epU"/>
+                            <constraint firstItem="r5Q-gy-ROg" firstAttribute="top" secondItem="kMe-Tr-my5" secondAttribute="bottom" constant="51" id="4e5-FH-pwb"/>
+                            <constraint firstItem="0v2-NK-uxs" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" id="4qE-4o-3Nj"/>
+                            <constraint firstItem="4xr-lD-PxT" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" constant="-136" id="7FM-7z-KGE"/>
+                            <constraint firstItem="r5Q-gy-ROg" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" id="Alj-oB-VEN"/>
+                            <constraint firstItem="0v2-NK-uxs" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" constant="-136" id="CuD-6E-lBW"/>
+                            <constraint firstItem="ddS-ZT-qhr" firstAttribute="top" secondItem="kMe-Tr-my5" secondAttribute="bottom" constant="8" id="H8b-NL-oN5"/>
+                            <constraint firstItem="rXp-YF-bRX" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" id="IYV-HX-ahf"/>
+                            <constraint firstItem="ddS-ZT-qhr" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" id="KmW-bR-hhn"/>
+                            <constraint firstItem="0v2-NK-uxs" firstAttribute="top" secondItem="QU9-St-U20" secondAttribute="bottom" constant="8" id="Rqd-vy-qg7"/>
+                            <constraint firstItem="QU9-St-U20" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" id="Spx-EP-Fph"/>
+                            <constraint firstItem="WZa-RX-Yav" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" constant="115.41" id="XqD-cG-ugs"/>
+                            <constraint firstItem="r5Q-gy-ROg" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" constant="-136" id="Zbu-6H-Ryi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WZa-RX-Yav" secondAttribute="trailing" constant="116.59" id="aWc-YX-iv1"/>
+                            <constraint firstItem="WZa-RX-Yav" firstAttribute="top" secondItem="rXp-YF-bRX" secondAttribute="bottom" constant="20" id="amf-8r-dhw"/>
+                            <constraint firstItem="rXp-YF-bRX" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leading" id="b8S-GZ-p0A"/>
+                            <constraint firstItem="rXp-YF-bRX" firstAttribute="top" secondItem="4xr-lD-PxT" secondAttribute="bottom" constant="29" id="f4v-Pk-ysN"/>
+                            <constraint firstItem="UX2-yO-vZF" firstAttribute="top" secondItem="0v2-NK-uxs" secondAttribute="bottom" constant="8" id="h6x-Iv-yXj"/>
+                            <constraint firstItem="UX2-yO-vZF" firstAttribute="centerX" secondItem="pFO-ss-oZf" secondAttribute="centerX" constant="-136" id="nY2-uj-lJd"/>
+                            <constraint firstItem="4xr-lD-PxT" firstAttribute="top" secondItem="UX2-yO-vZF" secondAttribute="bottom" constant="8" id="pMC-Km-ar3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ddS-ZT-qhr" secondAttribute="trailing" constant="96" id="rIh-ex-LRG"/>
+                            <constraint firstItem="UX2-yO-vZF" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" id="tHH-Tq-MD6"/>
+                            <constraint firstItem="ddS-ZT-qhr" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" constant="95" id="xHj-kx-R8z"/>
+                            <constraint firstItem="4xr-lD-PxT" firstAttribute="leading" secondItem="pFO-ss-oZf" secondAttribute="leadingMargin" id="xwp-ac-fal"/>
+                            <constraint firstItem="QU9-St-U20" firstAttribute="top" secondItem="r5Q-gy-ROg" secondAttribute="bottom" constant="8" id="zGa-ky-iZQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Registro" prompt="Registrar nuevo usuario" id="JEy-hU-Y4i">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="FEb-JA-Ix5"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapRegistro" destination="rXp-YF-bRX" id="UAx-Hv-uq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Z5-qZ-Mgb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="297"/>
         </scene>
     </scenes>
 </document>

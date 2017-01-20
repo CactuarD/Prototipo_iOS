@@ -10,12 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate{
 
     //Picker y array de items del picker
     @IBOutlet weak var pickrReg: UIPickerView!
     var pickerData: [String] = [String]()
-
+    
+    //Campos de texto
+    @IBOutlet weak var txtNombre: UITextField!
+    @IBOutlet weak var txtDireccion: UITextField!
+    @IBOutlet weak var txtRazonSoc: UITextField!
+    @IBOutlet weak var txtTelefono: UITextField!
+    @IBOutlet weak var txtCiudad: UITextField!
+    
     //Variables del MapKit y LocationManager
     @IBOutlet weak var mapRegistro: MKMapView!
     let regionRadius: CLLocationDistance = 1000
@@ -23,6 +30,13 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Delegados de los textfield
+        txtNombre.delegate = self
+        txtDireccion.delegate = self
+        txtRazonSoc.delegate = self
+        txtTelefono.delegate = self
+        txtCiudad.delegate = self
         
         //Solicitar Autorización para geolocalización
         locationManager.delegate = self
@@ -40,6 +54,16 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         
         //Datos que conforman el picker
         pickerData = ["Particular","Empresa"]
+        
+        //Focus de los textfield despues del return
+        self.txtNombre.sigCampo = self.txtDireccion
+        self.txtDireccion.sigCampo = self.txtRazonSoc
+        self.txtRazonSoc.sigCampo = self.txtTelefono
+        self.txtTelefono.sigCampo = self.txtCiudad
+    }
+    
+    @IBAction func regNuevoUsr(_ sender: Any) {
+        
     }
     
     // MARK: - Obtención de la ubicación actual del usuario
@@ -97,6 +121,12 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // Se activa cuando el usuario ha hecho una selección en el picker
         // Parametros Row y Componente determinan que se seleccionó
+    }
+    
+    //Funcionalidad del boton return en los campos de texto
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.sigCampo?.becomeFirstResponder()
+        return true
     }
 
 }

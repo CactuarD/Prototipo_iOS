@@ -12,6 +12,7 @@ target 'Prototipo_iOS_DesMovil' do
   target 'Prototipo_iOS_DesMovilTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Firebase'
   end
 
   target 'Prototipo_iOS_DesMovilUITests' do

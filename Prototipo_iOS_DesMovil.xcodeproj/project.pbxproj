@@ -16,6 +16,7 @@
 		1840934E1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1840934D1E27F61F00EAD8AF /* Prototipo_iOS_DesMovilTests.swift */; };
 		184093591E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184093581E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift */; };
 		184093681E27F66000EAD8AF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184093671E27F66000EAD8AF /* MapKit.framework */; };
+		18ADFCB71E31AE0B00F2DD68 /* UITextField+SigCampo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADFCB61E31AE0B00F2DD68 /* UITextField+SigCampo.swift */; };
 		18F64A6A1E2D31D700BE3EB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F64A691E2D31D700BE3EB6 /* GoogleService-Info.plist */; };
 		18F64A6C1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */; };
 		5496DD1A1C48D323DFC01E2E /* Pods_Prototipo_iOS_DesMovilUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB54FE417450C22C8760A008 /* Pods_Prototipo_iOS_DesMovilUITests.framework */; };
@@ -56,6 +57,7 @@
 		184093581E27F61F00EAD8AF /* Prototipo_iOS_DesMovilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototipo_iOS_DesMovilUITests.swift; sourceTree = "<group>"; };
 		1840935A1E27F61F00EAD8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184093671E27F66000EAD8AF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		18ADFCB61E31AE0B00F2DD68 /* UITextField+SigCampo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+SigCampo.swift"; sourceTree = "<group>"; };
 		18F64A691E2D31D700BE3EB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registro_UsuariosViewController.swift; sourceTree = "<group>"; };
 		1F15AD8B81C53B3BDB2D4378 /* Pods_Prototipo_iOS_DesMovilTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prototipo_iOS_DesMovilTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,9 +125,11 @@
 		184093341E27F61E00EAD8AF /* Prototipo_iOS_DesMovil */ = {
 			isa = PBXGroup;
 			children = (
-				184093371E27F61E00EAD8AF /* ViewController.swift */,
-				18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */,
+				18ADFCB51E31AD8B00F2DD68 /* Extensiones */,
+				18C1659F1E3114CF0021B35C /* Menus_Prototipo */,
+				186606261E312C64008B3FC8 /* Reg_Nuevo_Usr */,
 				184093351E27F61E00EAD8AF /* AppDelegate.swift */,
+				18F64A6B1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift */,
 				184093391E27F61E00EAD8AF /* Main.storyboard */,
 				1840933F1E27F61F00EAD8AF /* Assets.xcassets */,
 				184093411E27F61F00EAD8AF /* LaunchScreen.storyboard */,
@@ -163,6 +167,29 @@
 				EB54FE417450C22C8760A008 /* Pods_Prototipo_iOS_DesMovilUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		186606261E312C64008B3FC8 /* Reg_Nuevo_Usr */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Reg_Nuevo_Usr;
+			sourceTree = "<group>";
+		};
+		18ADFCB51E31AD8B00F2DD68 /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				18ADFCB61E31AE0B00F2DD68 /* UITextField+SigCampo.swift */,
+			);
+			name = Extensiones;
+			sourceTree = "<group>";
+		};
+		18C1659F1E3114CF0021B35C /* Menus_Prototipo */ = {
+			isa = PBXGroup;
+			children = (
+				184093371E27F61E00EAD8AF /* ViewController.swift */,
+			);
+			name = Menus_Prototipo;
 			sourceTree = "<group>";
 		};
 		D3043F775070E710A9E61346 /* Pods */ = {
@@ -473,6 +500,7 @@
 			files = (
 				18F64A6C1E2D3CC100BE3EB6 /* Registro_UsuariosViewController.swift in Sources */,
 				184093381E27F61E00EAD8AF /* ViewController.swift in Sources */,
+				18ADFCB71E31AE0B00F2DD68 /* UITextField+SigCampo.swift in Sources */,
 				1840933E1E27F61F00EAD8AF /* Prototipo_iOS_DesMovil.xcdatamodeld in Sources */,
 				184093361E27F61E00EAD8AF /* AppDelegate.swift in Sources */,
 			);

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-// NARK: - Extensiòn que implementa la funcion que permite avanzar al siguiente campo de texto al presionar el boton RETURN
+// MARK: - Extensiòn que implementa la funcion que permite avanzar al siguiente campo de texto al presionar el boton RETURN
 private var kAssociationKeyNextField: UInt8 = 0
 
 extension UITextField {

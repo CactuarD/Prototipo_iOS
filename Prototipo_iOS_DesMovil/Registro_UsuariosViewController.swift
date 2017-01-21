@@ -11,7 +11,10 @@ import MapKit
 import CoreLocation
 
 class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate{
+    
+    // MARK: Declaracione de outlets y variables
 
+    
     //Picker y array de items del picker
     @IBOutlet weak var pickrReg: UIPickerView!
     var pickerData: [String] = [String]()
@@ -23,10 +26,12 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
     @IBOutlet weak var txtTelefono: UITextField!
     @IBOutlet weak var txtCiudad: UITextField!
     
-    //Variables del MapKit y LocationManager
+    // MARK: Variables del MapKit y LocationManager
     @IBOutlet weak var mapRegistro: MKMapView!
     let regionRadius: CLLocationDistance = 1000
     let locationManager = CLLocationManager()
+    var pinUsuario = MKPointAnnotation()
+    // MARK: -
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +45,12 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         
         //Solicitar Autorización para geolocalización
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        let theLocation: MKUserLocation = mapRegistro.userLocation
+        theLocation.title = "Ubicación actual"
         
         //Mostrar y ubicar la ubicación del usuario
         self.mapRegistro.showsUserLocation = true
@@ -62,15 +72,23 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         self.txtTelefono.sigCampo = self.txtCiudad
     }
     
+    // MARK: - Boton para registrar nuevo usuario
+    
     @IBAction func regNuevoUsr(_ sender: Any) {
         
+        let errorEncontrado = checkForErrors()
+        
+        if !errorEncontrado
+        {
+            self.performSegue(withIdentifier: "segueLoginInic", sender: self)
+        }
     }
     
-    // MARK: - Obtención de la ubicación actual del usuario
+    // MARK: - Obtención de la ubicación actual del usuario y dirección
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
+        
         //Variable que guarda la ultima locación conocida
-        manager.desiredAccuracy = kCLLocationAccuracyBest
         let usrLocation = locations.last! as CLLocation
         
         
@@ -85,7 +103,21 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         
     }
     
-
+    //Cambia las coordenadas de la ubicación al mantener presionado en el mapa
+    @IBAction func addUsrPin(_ sender: UILongPressGestureRecognizer) {
+        
+        let ubicacion = sender.location(in: self.mapRegistro)
+        let pinCoord = self.mapRegistro.convert(ubicacion, toCoordinateFrom: self.mapRegistro)
+        
+        pinUsuario.coordinate = pinCoord
+        pinUsuario.title = "Ubicación personalizada"
+        pinUsuario.subtitle = "Ubicación designada por el usuario"
+        
+        self.mapRegistro.removeAnnotations(mapRegistro.annotations)
+        self.mapRegistro.addAnnotation(pinUsuario)
+    }
+    
+    
     
     // MARK: - Administrador de locación para solicitar la autorización correspondiente
     func checkLocationAuthorizationStatus() {
@@ -123,10 +155,89 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         // Parametros Row y Componente determinan que se seleccionó
     }
     
+    // MARK: - Validaciones de los campos de texto
     //Funcionalidad del boton return en los campos de texto
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.sigCampo?.becomeFirstResponder()
+        
+        if textField == txtCiudad {
+            textField.resignFirstResponder()
+        }
+        
+        if textField == txtCiudad {
+            let location = self.txtDireccion.text
+            let geocoder = CLGeocoder()
+            geocoder.geocodeAddressString(location!) { [weak self] placemarks, error in
+                if let placemark = placemarks?.first, let location = placemark.location {
+                    let mark = MKPlacemark(placemark: placemark)    
+                    
+                    if var region = self?.mapRegistro.region {
+                        region.center = location.coordinate
+                        region.span.longitudeDelta /= 8.0
+                        region.span.latitudeDelta /= 8.0
+                        self?.mapRegistro.setRegion(region, animated: true)
+                        self?.mapRegistro.addAnnotation(mark)
+                    }
+                }
+            }
+        }
         return true
     }
+    
+    //Realizar validaciones correspondientes
+    
+    func checkForErrors() -> Bool
+    {
+        var errors = false
+        let title = "Error"
+        var message = ""
+        
+        if (txtNombre.text?.isEmpty)! {
+            errors = true
+            message += "El campo de nombre esta vacio"
+            alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtNombre)
+            
+        }
+        else if (txtDireccion.text?.isEmpty)!
+        {
+            errors = true
+            message += "La direcciòn esta vacia"
+            alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtDireccion)
+        }
+        else if (txtRazonSoc.text?.isEmpty)!
+        {
+            errors = true
+            message += "Razón social vacia"
+            alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtRazonSoc)
+            
+        }
+        else if (txtTelefono.text?.isEmpty)!
+        {
+            errors = true
+            message += "Numero de telefono vacio"
+            alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtTelefono)
+        }
+        else if (txtCiudad.text?.isEmpty)!
+        {
+            errors = true
+            message += "Ciudad no especificada"
+            alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtCiudad)
+        }
+        
+        return errors
+    }
+    
+    //Funcion para crear alertas en caso de campo vacio
+    
+    func alertWithTitle(title: String!, message: String, ViewController: UIViewController, toFocus:UITextField) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel,handler: {_ in
+            toFocus.becomeFirstResponder()
+        });
+        alert.addAction(action)
+        ViewController.present(alert, animated: true, completion:nil)
+    }
+    
+    
 
 }

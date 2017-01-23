@@ -165,9 +165,9 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         }
         
         if textField == txtCiudad {
-            let location = self.txtDireccion.text
+            let location = self.txtDireccion.text!+" "+self.txtCiudad.text!
             let geocoder = CLGeocoder()
-            geocoder.geocodeAddressString(location!) { [weak self] placemarks, error in
+            geocoder.geocodeAddressString(location) { [weak self] placemarks, error in
                 if let placemark = placemarks?.first, let location = placemark.location {
                     let mark = MKPlacemark(placemark: placemark)    
                     

@@ -6,13 +6,10 @@ target 'Prototipo_iOS_DesMovil' do
   use_frameworks!
 
   # Pods for Prototipo_iOS_DesMovil
-  pod 'Firebase/Core'
-  pod 'Firebase/Database'
 
   target 'Prototipo_iOS_DesMovilTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'Firebase'
   end
 
   target 'Prototipo_iOS_DesMovilUITests' do

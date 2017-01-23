@@ -20,7 +20,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ICONO INTEGRAIT" translatesAutoresizingMaskIntoConstraints="NO" id="30A-8j-iA9">
+                                <rect key="frame" x="143" y="290" width="88" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="Vcj-AC-muF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="30A-8j-iA9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="270" id="Nmr-Ug-g8X"/>
+                            <constraint firstItem="30A-8j-iA9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nVY-Wv-VML"/>
+                            <constraint firstItem="30A-8j-iA9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vU2-xq-QYd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +41,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ICONO INTEGRAIT" width="200" height="200"/>
+    </resources>
 </document>

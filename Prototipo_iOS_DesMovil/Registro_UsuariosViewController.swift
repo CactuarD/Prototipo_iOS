@@ -110,8 +110,8 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         let pinCoord = self.mapRegistro.convert(ubicacion, toCoordinateFrom: self.mapRegistro)
         
         pinUsuario.coordinate = pinCoord
-        pinUsuario.title = "Ubicación personalizada"
-        pinUsuario.subtitle = "Ubicación designada por el usuario"
+        pinUsuario.title = txtCiudad.text
+        pinUsuario.subtitle = txtDireccion.text
         
         self.mapRegistro.removeAnnotations(mapRegistro.annotations)
         self.mapRegistro.addAnnotation(pinUsuario)

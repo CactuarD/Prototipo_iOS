@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18031A3B1E367703004E184C /* Prototipo_iOS_DesMovil.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prototipo_iOS_DesMovil.entitlements; sourceTree = "<group>"; };
 		184093321E27F61E00EAD8AF /* Prototipo_iOS_DesMovil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototipo_iOS_DesMovil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184093351E27F61E00EAD8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184093371E27F61E00EAD8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		184093341E27F61E00EAD8AF /* Prototipo_iOS_DesMovil */ = {
 			isa = PBXGroup;
 			children = (
+				18031A3B1E367703004E184C /* Prototipo_iOS_DesMovil.entitlements */,
 				18031A3A1E3663A3004E184C /* Entidades */,
 				18031A391E3662F6004E184C /* Servicios */,
 				18ADFCB51E31AD8B00F2DD68 /* Extensiones */,
@@ -307,6 +309,15 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
 								enabled = 0;
 							};
 							com.apple.Maps.iOS = {

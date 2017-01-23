@@ -22,7 +22,6 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
     //Campos de texto
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var txtDireccion: UITextField!
-    @IBOutlet weak var txtRazonSoc: UITextField!
     @IBOutlet weak var txtTelefono: UITextField!
     @IBOutlet weak var txtCiudad: UITextField!
     
@@ -39,7 +38,6 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         //Delegados de los textfield
         txtNombre.delegate = self
         txtDireccion.delegate = self
-        txtRazonSoc.delegate = self
         txtTelefono.delegate = self
         txtCiudad.delegate = self
         
@@ -67,9 +65,16 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         
         //Focus de los textfield despues del return
         self.txtNombre.sigCampo = self.txtDireccion
-        self.txtDireccion.sigCampo = self.txtRazonSoc
-        self.txtRazonSoc.sigCampo = self.txtTelefono
+        self.txtDireccion.sigCampo = self.txtTelefono
         self.txtTelefono.sigCampo = self.txtCiudad
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Registro_UsuariosViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     // MARK: - Boton para registrar nuevo usuario
@@ -96,10 +101,11 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
         manager.stopUpdatingLocation()
         
         let center = CLLocationCoordinate2D(latitude: usrLocation.coordinate.latitude, longitude: usrLocation.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         
         self.mapRegistro.setRegion(region, animated: true)
-
+        
+        manager.stopUpdatingLocation()
         
     }
     
@@ -203,13 +209,6 @@ class Registro_UsuariosViewController: UIViewController, CLLocationManagerDelega
             errors = true
             message += "La direcciòn esta vacia"
             alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtDireccion)
-        }
-        else if (txtRazonSoc.text?.isEmpty)!
-        {
-            errors = true
-            message += "Razón social vacia"
-            alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.txtRazonSoc)
-            
         }
         else if (txtTelefono.text?.isEmpty)!
         {
